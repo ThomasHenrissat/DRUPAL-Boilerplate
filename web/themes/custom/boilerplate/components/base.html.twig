@@ -1,0 +1,27 @@
+{#
+    Props:
+    - path (_self on component)
+
+    Blocks:
+    - component
+
+    Description:
+    - This template is embeded in all our components to add a custom Twig Debugging.
+    - Without it there would be no "BEGIN OUTPUT" and "END OUTPUT" in the inspector because the Twig Debugger cannot see the files in our "@components" namespace.
+    - "twigDebugEnabled" is a variable we've added to the preprocess of our theme in "boilerplate.theme", we use it to know if the Twig debbuging is enabled.
+
+    Usage:
+    {% embed "@components/base.html.twig" with { path: _self } %}
+        {% block component %}
+            Add you component's markup here...
+        {% endblock %}
+    {% endembed  %}
+#}
+
+{% if twigDebugEnabled %}
+    <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+{% endif %}
+{% block component %}{% endblock %}
+{% if twigDebugEnabled %}
+    <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+{% endif %}
