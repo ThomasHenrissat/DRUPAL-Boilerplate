@@ -1,0 +1,5 @@
+name: Boilerplate
+type: theme
+description: 'A boilerplate theme for components'
+core_version_requirement: ^9
+base theme: stable
