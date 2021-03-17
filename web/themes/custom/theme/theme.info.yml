@@ -1,8 +1,8 @@
-name: Boilerplate
+name: Theme
 type: theme
 description: 'A boilerplate theme for components'
 core_version_requirement: ^9
 base theme: stable
 components:
   namespaces:
-    components: components
+    templates: boilerplate/src/templates
