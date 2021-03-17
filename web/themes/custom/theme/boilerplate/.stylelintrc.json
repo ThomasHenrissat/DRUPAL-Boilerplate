@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-recess-order"
+    ],
+    "plugins": [
+        "stylelint-declaration-use-variable"
+	],
+    "rules": {
+        "order/properties-alphabetical-order": null,
+        "sh-waqar/declaration-use-variable": [
+            [
+                "animation-delay",
+                "animation-duration",
+                "border-radius",
+                "/color/",
+                "font-size",
+                "font-weight",
+                "/gap/",
+                "letter-spacing",
+                "line-height",
+                "/margin/",
+                "/padding/",
+                "transition-duration",
+                "transition-delay",
+                "z-index",
+                {
+                    "ignoreValues": [
+                        "auto",
+                        "0",
+                        "0px",
+                        "inherit",
+                        "none"
+                    ]
+                }
+            ]
+        ],
+        "color-named": null,
+        "indentation": 4,
+        "length-zero-no-unit": null,
+        "max-nesting-depth": 3,
+        "no-duplicate-at-import-rules": true,
+        "no-eol-whitespace": true,
+        "no-extra-semicolons": true,
+        "no-missing-end-of-source-newline": null,
+        "value-no-vendor-prefix": null,
+        "selector-class-pattern": "^([a-z]-)?([a-z0-9]+(-[a-z0-9]+)*)(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$",
+        "string-quotes": "double",
+        "unit-case": "lower"
+    }
+}

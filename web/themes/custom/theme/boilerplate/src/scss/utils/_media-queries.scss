@@ -1,0 +1,89 @@
+// Breakpoints
+$screen-m-breakpoint-min: 480px;
+$screen-l-breakpoint-min: 760px;
+$screen-xl-breakpoint-min: 1000px;
+$screen-xxl-breakpoint-min: 1300px;
+$screen-xxxl-breakpoint-min: 1700px;
+$screen-xxxxl-breakpoint-min: 1800px;
+
+// Rules
+$screen-m-rule-min: "min-width: " + $screen-m-breakpoint-min;
+$screen-l-rule-min: "min-width: " + $screen-l-breakpoint-min;
+$screen-xl-rule-min: "min-width: " + $screen-xl-breakpoint-min;
+$screen-xxl-rule-min: "min-width: " + $screen-xxl-breakpoint-min;
+$screen-xxxl-rule-min: "min-width: " + $screen-xxxl-breakpoint-min;
+$screen-xxxxl-rule-min: "min-width: " + $screen-xxxxl-breakpoint-min;
+
+// Mixins
+@mixin media-min($breakpoint) {
+    $rule: "min-width: " + $breakpoint;
+
+    @if $breakpoint == M {
+        $rule: $screen-m-rule-min;
+    } @else if $breakpoint == L {
+        $rule: $screen-l-rule-min;
+    } @else if $breakpoint == XL {
+        $rule: $screen-xl-rule-min;
+    } @else if $breakpoint == XXL {
+        $rule: $screen-xxl-rule-min;
+    } @else if $breakpoint == XXXL {
+        $rule: $screen-xxxl-rule-min;
+    } @else if $breakpoint == XXXXL {
+        $rule: $screen-xxxxl-rule-min;
+    }
+
+    @if ($rule) {
+        @media screen and ($rule) {
+            @content;
+        }
+    }
+}
+
+// This is a hack to make sure that media queries are ordered correctly
+@include media-min(M) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+@include media-min(L) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+@include media-min(XL) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+@include media-min(XXL) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+@include media-min(XXXL) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+@include media-min(XXXXL) {
+    .dummy {
+        box-sizing: border-box;
+    }
+}
+
+/*
+container {
+    // WARNING: The mixin needs to be referenced INSIDE at least one container selector
+    @include media-min(M) {
+        test {
+            background: transparent;
+        }
+    }
+
+    @include media-min(1500px) {
+        test {
+            background: red;
+        }
+    }
+}
+*/

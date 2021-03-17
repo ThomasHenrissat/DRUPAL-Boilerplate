@@ -1,11 +1,6 @@
-{#
-    Description:
-    - A very polite component
-#}
-
 {% set baseClass = 'c-hello' %}
 
-{% embed "@components/base.html.twig" with { path: _self } %}
+{% embed "@templates/objects/base/base.html.twig" with { path: _self } %}
     {% block component %}
         <div class="{{ baseClass }}">
             <p>Hello world!</p>

@@ -1,0 +1,9 @@
+{
+    "description": "This template is embeded in all our components to add a custom Twig Debugging.\nWithout it there would be no `BEGIN OUTPUT` and `END OUTPUT` in the inspector because the Twig Debugger cannot see the files in our custom namespaces.\nThe variable `twigDebugEnabled` is a variable we've added to the preprocess of our theme in `theme.theme`, we use it to know if the Twig debbuging is enabled.",
+    "props": [
+        { "name": "path", "type": "string", "values": ["_self"] }
+    ],
+    "blocks": [
+        { "name": "component" }
+    ]
+}

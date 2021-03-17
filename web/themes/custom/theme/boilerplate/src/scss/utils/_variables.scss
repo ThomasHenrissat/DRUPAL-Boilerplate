@@ -1,0 +1,66 @@
+// ----------------
+// Variables can save you a lot of time and spare you a lot of pain.
+//
+// The main objectives of this file are the following:
+// - Promote reusability
+// - Centralize your values for quick and easy refactor
+// - Limit the number of values for your rules
+//
+// The values down below are examples, you can edit them as you like.
+//
+// Examples:
+// 1) Let's say your website has a sidebar for wide screens and a header for smaller screens.
+// You want to hide the header and show the sidebar if the screen is wide enough.
+// Instead of writing "XL" in your two media queries, use $breakpoint-header, you'll be certain that they always match.
+// And if you ever need to change it you only need to do it here.
+// The same principle applies to z indexes.
+// If you need to add a new layer between two existing ones you can do it here in a matter of seconds.
+//
+// 2) Ending up with a project containing a hundred different margin and padding sizes is not fun.
+// It won't look consistent and will lead to complaints from your client down the line.
+// Using variables like $padding-10 and $margin-10 help to keep the amount of different values to a minimum.
+// The same applies to font sizes.
+// ----------------
+
+// Breakpoints
+$breakpoint-header: XL;
+
+// Layout
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-20: 20px;
+
+$padding-5: 5px;
+$padding-10: 10px;
+$padding-20: 20px;
+
+$z-index-modal: 20;
+$z-index-header: 10;
+$z-index-above: 1;
+$z-index-base: 0;
+$z-index-below: -1;
+
+// Borders
+$border-radius-5: 5px;
+$border-radius-round: 50%;
+
+$border-width-1: 1px;
+$border-width-2: 2px;
+
+// Fonts
+$font-family-text: sans-serif;
+$font-family-title: sans-serif;
+
+$font-size-12: 12px;
+$font-size-14: 14px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Transitions
+$transition-duration-0-25: 0.25s;
+$transition-duration-0-5: 0.5s;
+
+$transition-function-ease-in: ease-in;
+$transition-function-ease-out: ease-out;

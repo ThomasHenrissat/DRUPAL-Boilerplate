@@ -1,0 +1,147 @@
+// Center vertically and/or horizontally an element using absolute positioning
+@mixin center($xy:xy) {
+    position: absolute;
+
+    @if $xy == xy {
+        @include transform(translateX(-50%) translateY(-50%));
+        top: 50%;
+        right: auto;
+        bottom: auto;
+        left: 50%;
+    } @else if $xy == x {
+        @include transform(translateX(-50%));
+        right: auto;
+        left: 50%;
+    } @else if $xy == y {
+        @include transform(translateY(-50%));
+        top: 50%;
+        bottom: auto;
+    }
+}
+
+// Maintain a custom aspect ratio
+@mixin aspect-ratio($ratio-or-width, $height: null, $use-after: null) {
+    $padding: if($height, percentage($height/$ratio-or-width), percentage(1/$ratio-or-width));
+    $rule: if($use-after, "::after", "::before");
+
+    &#{$rule} {
+        display: block;
+        padding-top: $padding;
+        content: "";
+    }
+}
+
+// More explicit box shadow
+@mixin box-shadow($offset-x: 0px, $offset-y: 6px, $blur-radius: 6px, $spread-radius: 0px, $color: rgba(0,0,0,0.16)) {
+    box-shadow: $offset-x $offset-y $blur-radius $spread-radius $color;
+}
+
+// Fill up the entire space of the parent container
+@mixin full-space() {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+// Break words properly
+@mixin break-word() {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+// Emulate "background-size: cover" on a generic element
+// (Needs to be placed on the parent of the element)
+// You can align the child using the $align argument (center|top|right|bottom|left)
+// You can disable the relative position using the $relative-position argument (true|false)
+@mixin background-cover($align: center, $relative-position: true) {
+    overflow: hidden;
+
+    > *:first-child {
+        position: absolute;
+        min-width: 1000%;
+        min-height: 1000%;
+
+        // We use scale(0.1005) because the exacte value scale(0.1) can create visual glitches
+        @if $align == center {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) scale(0.1005);
+        } @else if $align == top {
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-45%) scale(0.1005);
+        } @else if $align == right {
+            top: 50%;
+            left: 100%;
+            transform: translateX(-55%) translateY(-50%) scale(0.1005);
+        } @else if $align == bottom {
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-55%) scale(0.1005);
+        } @else if $align == left {
+            top: 50%;
+            left: 0%;
+            transform: translateX(-45%) translateY(-50%) scale(0.1005);
+        }
+    }
+
+    @if $relative-position == true {
+        position: relative;
+    }
+}
+
+// Emulate "background-size: contain" on a generic element
+// (Needs to be placed on the parent of the element)
+// You can align the child using the $align argument (center|top|right|bottom|left)
+// You can disable the relative position using the $relative-position argument (true|false)
+@mixin background-contain($align: center, $relative-position: true) {
+    overflow: hidden;
+
+    > *:first-child {
+        position: absolute;
+        max-width: 10%;
+        max-height: 10%;
+
+        @if $align == center {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) scale(10);
+        } @else if $align == top {
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%) translateY(450%) scale(10);
+        } @else if $align == right {
+            top: 50%;
+            left: 100%;
+            transform: translateX(-550%) translateY(-50%) scale(10);
+        } @else if $align == bottom {
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-550%) scale(10);
+        } @else if $align == left {
+            top: 50%;
+            left: 0%;
+            transform: translateX(450%) translateY(-50%) scale(10);
+        }
+    }
+
+    @if $relative-position == true {
+        position: relative;
+    }
+}
+
+// General reset for input elements
+@mixin reset-input {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    background: none;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    appearance: none;
+}

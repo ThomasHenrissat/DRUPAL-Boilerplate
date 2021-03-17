@@ -1,0 +1,7 @@
+{% if twigDebugEnabled %}
+    <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+{% endif %}
+{% block component %}{% endblock %}
+{% if twigDebugEnabled %}
+    <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+{% endif %}
