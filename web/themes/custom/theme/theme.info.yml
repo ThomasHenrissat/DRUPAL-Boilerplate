@@ -3,6 +3,9 @@ type: theme
 description: 'A boilerplate theme for components'
 core_version_requirement: ^9
 base theme: stable
+libraries:
+  - theme/global-css
+  - theme/global-js-footer
 components:
   namespaces:
     templates: boilerplate/src/templates

@@ -1,0 +1,8 @@
+global-css:
+  css:
+    base:
+      boilerplate/dist/dev/css/main.css: {}
+
+global-js-footer:
+  js:
+    boilerplate/dist/dev/js/index.js: {}
