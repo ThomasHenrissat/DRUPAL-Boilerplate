@@ -1,0 +1,91 @@
+/*
+container {
+    // WARNING: The mixin needs to be referenced INSIDE at least one container selector
+    @include media-min(M) {
+        test {
+            background: transparent;
+        }
+    }
+
+    @include media-min(1500px) {
+        test {
+            background: red;
+        }
+    }
+}
+*/
+/* stylelint-disable */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+* {
+  box-sizing: border-box; }
+
+.c-hello {
+  color: red; }
+
+@media screen and (min-width: 480px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 760px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 1000px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 1300px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 1700px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 1800px) {
+  .dummy {
+    box-sizing: border-box; } }
+
+/*# sourceMappingURL=main.css.map */
