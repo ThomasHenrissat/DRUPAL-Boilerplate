@@ -1,9 +1,13 @@
-{% set baseClass = 'c-hello' %}
+{% set componentClass = 'c-hello' %}
 
 {% embed "@templates/objects/base/base.html.twig" with { path: _self } %}
     {% block component %}
-        <div class="{{ baseClass }}">
-            <p>Hello world!</p>
+        <div {{ attributes.addClass(componentClass) }}>
+            {% if name %}
+                <p>Hello {{ name }}!</p>
+            {% else %}
+                <p>Hello!</p>
+            {% endif %}
         </div>
     {% endblock %}
 {% endembed  %}

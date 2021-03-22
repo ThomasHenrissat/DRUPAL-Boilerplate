@@ -1,3 +1,7 @@
 {
-    "description": "A very polite component"
+    "description": "A very polite component",
+    "props": [
+        { "name": "attributes", "type": "array", "values": ["attributes"] },
+        { "name": "name", "type": "string" }
+    ]
 }
