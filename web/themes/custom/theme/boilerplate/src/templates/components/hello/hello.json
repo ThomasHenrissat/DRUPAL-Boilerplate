@@ -1,7 +1,7 @@
 {
     "description": "A very polite component",
     "props": [
-        { "name": "attributes", "type": "array", "values": ["attributes"] },
+        { "name": "image", "type": "image" },
         { "name": "name", "type": "string" }
     ]
 }

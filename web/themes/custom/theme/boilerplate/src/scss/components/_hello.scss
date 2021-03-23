@@ -1,3 +1,7 @@
 .c-hello {
     margin: $margin-10 0;
+
+    &__image {
+        width: 200px;
+    }
 }
