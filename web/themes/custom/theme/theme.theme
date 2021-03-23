@@ -5,6 +5,14 @@
 */
 
 function theme_preprocess(&$variables) {
-    // Allow the Attribute Class to deal with adding a css class to this element.
+    // Add a twigDebugEnabled variables that indicates if Twig debugging is enabled
     $variables['twigDebugEnabled'] = \Drupal::service('twig')->isDebug();
+}
+
+function theme_preprocess_image(&$variables) {
+    // Remove width and height parameters on images
+    if (isset($variables['attributes']['width']) && isset($variables['attributes']['height'])) {
+        unset($variables['attributes']['width']);
+        unset($variables['attributes']['height']);
+    }
 }
