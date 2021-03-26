@@ -1,9 +1,9 @@
 {# This object allows us to add twig debbuging to our templates #}
 
 {% if twigDebugEnabled %}
-    <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+    <!-- BEGIN OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
 {% endif %}
     {% block content %}{% endblock %}
 {% if twigDebugEnabled %}
-    <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+    <!-- END OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
 {% endif %}

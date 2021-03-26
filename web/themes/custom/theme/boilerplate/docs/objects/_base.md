@@ -40,11 +40,11 @@ The variable `twigDebugEnabled` is a variable we've added to the preprocess of o
 {# This object allows us to add twig debbuging to our templates #}
 
 {% if twigDebugEnabled %}
-    <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+    <!-- BEGIN OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
 {% endif %}
     {% block content %}{% endblock %}
 {% if twigDebugEnabled %}
-    <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
+    <!-- END OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
 {% endif %}
 ```
 
