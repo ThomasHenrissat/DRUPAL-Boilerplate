@@ -14,6 +14,14 @@ container {
     }
 }
 */
+[class^="c-"],
+[class*=" c-"] {
+  border: 3px solid lightgreen; }
+
+[class^="o-"],
+[class*=" o-"] {
+  border: 3px solid orange; }
+
 /* stylelint-disable */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,9 +69,14 @@ table {
 * {
   box-sizing: border-box; }
 
+.o-media__image {
+  display: block;
+  width: 200px; }
+
 .c-hello {
   margin: 10px 0; }
   .c-hello__image {
+    display: block;
     width: 200px; }
   @media screen and (min-width: 480px) {
   .dummy {

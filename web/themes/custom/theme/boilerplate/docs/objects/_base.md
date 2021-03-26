@@ -1,4 +1,4 @@
-## Base
+## _base
 
 **Description:**
 
@@ -15,21 +15,21 @@ The variable `twigDebugEnabled` is a variable we've added to the preprocess of o
 
 **Blocks:**
 
-- `component`
+- `content`
 
 **Usage:**
 
 ```twig
-{% embed "@templates/objects/base/base.html.twig" with {
+{% embed "@templates/objects/base/_base.html.twig" with {
     path: ""
 } %}
-    {% block component %}{% endblock %}
+    {% block content %}{% endblock %}
 {% endembed %}
 ```
 
 **Location:**
 
- `src/templates/objects/base/base.html.twig`
+ `src/templates/objects/base/_base.html.twig`
 
 **Code:**
 
@@ -37,10 +37,12 @@ The variable `twigDebugEnabled` is a variable we've added to the preprocess of o
     <summary>Click to expand</summary>
 
 ```twig
+{# This object allows us to add twig debbuging to our templates #}
+
 {% if twigDebugEnabled %}
     <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
 {% endif %}
-{% block component %}{% endblock %}
+    {% block content %}{% endblock %}
 {% if twigDebugEnabled %}
     <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
 {% endif %}
