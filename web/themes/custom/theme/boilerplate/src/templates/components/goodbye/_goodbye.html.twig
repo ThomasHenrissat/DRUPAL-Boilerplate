@@ -1,0 +1,11 @@
+{% extends "@templates/objects/base/_base.html.twig" %} {% set path = _self %}
+
+{% set componentClass = 'c-goodbye' %}
+
+{% block content %}
+    <div {{ attributes.addClass(componentClass) }}>
+        {% if text %}
+            <p>{{ text }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

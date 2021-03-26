@@ -1,0 +1,6 @@
+{
+    "description": "A very sad component",
+    "props": [
+        { "name": "text", "type": "string" }
+    ]
+}
