@@ -2,6 +2,8 @@
     "description": "A very polite component",
     "props": [
         { "name": "image", "type": "image" },
-        { "name": "name", "type": "string" }
+        { "name": "media", "type": "media" },
+        { "name": "paragraph", "type": "paragraph" },
+        { "name": "text", "type": "string" }
     ]
 }

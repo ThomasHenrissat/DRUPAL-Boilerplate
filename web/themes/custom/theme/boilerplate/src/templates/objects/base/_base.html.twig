@@ -1,7 +1,9 @@
+{# This object allows us to add twig debbuging to our templates #}
+
 {% if twigDebugEnabled %}
     <!-- BEGIN OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
 {% endif %}
-{% block component %}{% endblock %}
+    {% block content %}{% endblock %}
 {% if twigDebugEnabled %}
     <!-- END OUTPUT from '{{ directory ~ "/" ~ path[1:] }}' -->
 {% endif %}

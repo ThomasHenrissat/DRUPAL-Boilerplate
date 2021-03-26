@@ -4,6 +4,6 @@
         { "name": "path", "type": "string", "values": ["_self"] }
     ],
     "blocks": [
-        { "name": "component" }
+        { "name": "content" }
     ]
 }

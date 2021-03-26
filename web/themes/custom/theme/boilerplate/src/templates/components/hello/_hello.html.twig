@@ -1,0 +1,22 @@
+{% extends "@templates/objects/base/_base.html.twig" %} {% set path = _self %}
+
+{% set componentClass = 'c-hello' %}
+
+{% block content %}
+    <div {{ attributes.addClass(componentClass) }}>
+        {{ title_prefix }}
+        {{ title_suffix }}
+        {% if text %}
+            <p>{{ text }}</p>
+        {% endif %}
+        {% if image %}
+            {{ image|with(["0", "#item_attributes"], { "class": componentClass ~ "__image" }) }}
+        {% endif %}
+        {% if media %}
+            {{ media }}
+        {% endif %}
+        {% if paragraph %}
+            {{ paragraph }}
+        {% endif %}
+    </div>
+{% endblock %}
