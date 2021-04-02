@@ -4,6 +4,6 @@
         { "name": "image", "type": "image" },
         { "name": "media", "type": "media" },
         { "name": "paragraph", "type": "paragraph" },
-        { "name": "text", "type": "string" }
+        { "name": "text", "type": "text" }
     ]
 }
