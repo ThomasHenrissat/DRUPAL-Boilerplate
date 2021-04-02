@@ -8,13 +8,15 @@ A very sad component
 
 | Name | Type | Values | Default |
 |------|------|--------|---------|
-| text | string | :x: | :x: |
+| bold | boolean | :x: | `0` |
+| text | text | :x: | :x: |
 
 
 **Usage:**
 
 ```twig
 {% include "@templates/components/goodbye/_goodbye.html.twig" with {
+    bold: "",
     text: ""
 } %}
 ```
@@ -32,9 +34,13 @@ A very sad component
 {% extends "@templates/objects/base/_base.html.twig" %} {% set path = _self %}
 
 {% set componentClass = 'c-goodbye' %}
+{% set classes = [
+    componentClass,
+    bold == "On" ? componentClass ~ '--bold' : ''
+] %}
 
 {% block content %}
-    <div {{ attributes.addClass(componentClass) }}>
+    <div {{ attributes.addClass(classes) }}>
         {% if text %}
             <p>{{ text }}</p>
         {% endif %}

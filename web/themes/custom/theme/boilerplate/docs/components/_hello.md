@@ -11,7 +11,7 @@ A very polite component
 | image | image | :x: | :x: |
 | media | media | :x: | :x: |
 | paragraph | paragraph | :x: | :x: |
-| text | string | :x: | :x: |
+| text | text | :x: | :x: |
 
 
 **Usage:**
