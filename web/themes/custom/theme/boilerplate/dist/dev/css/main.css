@@ -61,34 +61,38 @@ table {
 * {
   box-sizing: border-box; }
 
-.o-media__image {
-  display: block;
-  width: 200px; }
+.c-button__label {
+  margin-right: 5px; }
 
-.c-goodbye--bold {
+.c-three-columns__title {
+  margin-bottom: 10px;
   font-weight: 700; }
 
-.c-hello {
-  margin: 10px 0; }
-  .c-hello__image {
-    display: block;
-    width: 200px; }
-  @media screen and (min-width: 480px) {
+.c-three-columns__content {
+  display: flex;
+  justify-content: space-around; }
+
+@media screen and (min-width: 480px) {
   .dummy {
     box-sizing: border-box; } }
-  @media screen and (min-width: 760px) {
+
+@media screen and (min-width: 760px) {
   .dummy {
     box-sizing: border-box; } }
-  @media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1000px) {
   .dummy {
     box-sizing: border-box; } }
-  @media screen and (min-width: 1300px) {
+
+@media screen and (min-width: 1300px) {
   .dummy {
     box-sizing: border-box; } }
-  @media screen and (min-width: 1700px) {
+
+@media screen and (min-width: 1700px) {
   .dummy {
     box-sizing: border-box; } }
-  @media screen and (min-width: 1800px) {
+
+@media screen and (min-width: 1800px) {
   .dummy {
     box-sizing: border-box; } }
 
