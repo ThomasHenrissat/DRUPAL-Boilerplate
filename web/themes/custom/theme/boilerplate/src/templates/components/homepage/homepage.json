@@ -1,0 +1,6 @@
+{
+    "description": "Todo",
+    "props": [
+        { "name": "paragraph", "type": "paragraph" }
+    ]
+}

@@ -1,0 +1,11 @@
+{% extends "@templates/objects/base/_base.html.twig" %} {% set path = _self %}
+
+{% set componentClass = 'c-homepage' %}
+
+{% block content %}
+    <div {{ attributes.addClass(componentClass) }}>
+        {% if paragraph %}
+            {{ paragraph }}
+        {% endif %}
+    </div>
+{% endblock %}
