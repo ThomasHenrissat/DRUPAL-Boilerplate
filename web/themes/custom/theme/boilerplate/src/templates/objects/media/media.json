@@ -1,6 +1,0 @@
-{
-    "description": "To render all medias",
-    "props": [
-        { "name": "image", "type": "image" }
-    ]
-}
