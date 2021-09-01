@@ -1,0 +1,25 @@
+{% extends "@templates/objects/base/_base.html.twig" %} {% set path = _self %}
+
+{% set componentClass = 'c-columns' %}
+
+{# Get columnCount #}
+{% if columnCount == '1' %}
+    {% set columnCountClass = componentClass ~ '--1' %}
+{% elseif columnCount == '3' %}
+    {% set columnCountClass = componentClass ~ '--3' %}
+{% else %}
+    {% set columnCountClass = componentClass ~ '--2' %}
+{% endif %}
+
+{% block content %}
+    <div class="{{ componentClass }} {{ columnCountClass }} {{ attributes.class }}" {{ attributes }}>
+        {{ title_prefix }}
+        {{ title_suffix }}
+        {% if title %}
+            <h2 class="{{ componentClass }}__title">{{ title }}</h2>
+        {% endif %}
+        {% if content %}
+            <div class="{{ componentClass }}__content">{{ content }}</div>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{
+    "description": "Todo",
+    "props": [
+        {
+            "name": "columnCount",
+            "type": "integer",
+            "value": ["1", "2", "3"],
+            "default": "2"
+        },
+        { "name": "title", "type": "text" },
+        { "name": "content", "type": "content" }
+    ]
+}
