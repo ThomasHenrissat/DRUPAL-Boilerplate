@@ -1,11 +1,14 @@
 .c-three-columns {
+    padding: $padding-20;
+
     &__title {
         margin-bottom: $margin-10;
         font-weight: $font-weight-bold;
     }
 
     &__content {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: $gap-10;
     }
 }
