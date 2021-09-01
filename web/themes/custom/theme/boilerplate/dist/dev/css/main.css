@@ -69,17 +69,30 @@ table {
   box-sizing: border-box;
 }
 
+.c-article__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.c-article__rte {
+  margin-bottom: 10px;
+}
+
 .c-button__label {
   margin-right: 5px;
 }
 
+.c-three-columns {
+  padding: 20px;
+}
 .c-three-columns__title {
   margin-bottom: 10px;
   font-weight: 700;
 }
 .c-three-columns__content {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 @media screen and (min-width: 480px) {
   .dummy {
