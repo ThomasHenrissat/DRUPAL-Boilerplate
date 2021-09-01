@@ -1,7 +1,0 @@
-{
-    "description": "Todo",
-    "props": [
-        { "name": "title", "type": "text" },
-        { "name": "content", "type": "content" }
-    ]
-}
