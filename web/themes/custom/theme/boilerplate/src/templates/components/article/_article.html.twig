@@ -9,6 +9,9 @@
         {% if title %}
             <h3 class="{{ componentClass }}__title">{{ title }}</h3>
         {% endif %}
+        {% if media %}
+            <div class="{{ componentClass }}__media">{{ media }}</div>
+        {% endif %}
         {% if rte %}
             <div class="{{ componentClass }}__rte">{{ rte }}</div>
         {% endif %}
