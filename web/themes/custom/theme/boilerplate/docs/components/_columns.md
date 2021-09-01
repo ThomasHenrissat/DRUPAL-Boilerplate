@@ -1,4 +1,4 @@
-## _three-columns
+## _columns
 
 **Description:**
 
@@ -8,6 +8,7 @@ Todo
 
 | Name | Type | Values | Default | Description |
 |------|------|--------|---------|-------------|
+| columnCount | integer | :x: | `2` |  |
 | title | text | :x: | :x: |  |
 | content | content | :x: | :x: |  |
 
@@ -15,7 +16,8 @@ Todo
 **Usage:**
 
 ```twig
-{% include "@templates/components/three-columns/_three-columns.html.twig" with {
+{% include "@templates/components/columns/_columns.html.twig" with {
+    columnCount: "",
     title: "",
     content: ""
 } %}
@@ -23,7 +25,7 @@ Todo
 
 **Location:**
 
- `src/templates/components/three-columns/_three-columns.html.twig`
+ `src/templates/components/columns/_columns.html.twig`
 
 
 
