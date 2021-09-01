@@ -8,9 +8,9 @@ The variable `twigDebugEnabled` is a variable we've added to the preprocess of o
 
 **Properties:**
 
-| Name | Type | Values | Default |
-|------|------|--------|---------|
-| path | string | `_self` | :x: |
+| Name | Type | Values | Default | Description |
+|------|------|--------|---------|-------------|
+| path | string | `_self` | :x: |  |
 
 
 **Blocks:**
@@ -31,23 +31,5 @@ The variable `twigDebugEnabled` is a variable we've added to the preprocess of o
 
  `src/templates/objects/base/_base.html.twig`
 
-**Code:**
-
-<details>
-    <summary>Click to expand</summary>
-
-```twig
-{# This object allows us to add twig debbuging to our templates #}
-
-{% if twigDebugEnabled %}
-    <!-- BEGIN OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
-{% endif %}
-    {% block content %}{% endblock %}
-{% if twigDebugEnabled %}
-    <!-- END OUTPUT from '{{ directory ~ "/boilerplate/src/" ~ path[1:] }}' -->
-{% endif %}
-```
-
-</details>
 
 

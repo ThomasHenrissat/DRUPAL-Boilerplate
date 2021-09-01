@@ -1,0 +1,15 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# This is the top-most EditorConfig file
+root = true
+
+# New lines are Unix-style, files have no final newlines and whitespaces are trimed
+[*]
+end_of_line = lf
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+# Indentation of 4 spaces
+[*.{html,html.twig,json,js,ts,css,scss}]
+indent_style = space
+indent_size = 4

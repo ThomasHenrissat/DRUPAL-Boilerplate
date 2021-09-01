@@ -7,7 +7,15 @@ $color-grey-light: #888;
 $color-grey-lighter: #aaa;
 $color-white: #fff;
 
-// Default
-$color-text-primary: $color-black;
-$color-text-secondary: $color-white;
-$color-red: red;
+// Text
+$color-text: $color-black;
+$color-text-two: $color-white;
+$color-text-three: $color-grey;
+
+// Main
+$color-main: $color-black;
+$color-main-two: $color-white;
+$color-main-three: $color-grey;
+
+// Other
+$color-shadow: rgba($color-black, 0.15);

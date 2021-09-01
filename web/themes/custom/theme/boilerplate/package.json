@@ -1,31 +1,31 @@
 {
-  "name": "archriss-front-boilerplate",
-  "description": "A frontend development boilerplate",
-  "author": "Gwenael Robert, Thomas Henrissat",
-  "license": "MIT",
-  "scripts": {
-    "fresh-install": "rm -rf node_modules && yarn",
-    "fusv": "fusv ./src/scss",
-    "assets": "yarn afb-assets",
-    "scripts": "yarn afb-scripts",
-    "styles": "yarn afb-styles",
-    "docs": "yarn afb-docs",
-    "build": "yarn afb-build",
-    "watch": "yarn afb-watch"
-  },
-  "dependencies": {
-    "archriss-front-builder": "https://github.com/archriss/archriss-front-builder.git#v1.2.2",
-    "find-unused-sass-variables": "3.1.0",
-    "typescript": "4.2.3"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.18.0",
-    "@typescript-eslint/parser": "4.18.0",
-    "eslint": "7.22.0",
-    "eslint-plugin-react": "7.22.0",
-    "stylelint": "13.12.0",
-    "stylelint-config-recess-order": "2.3.0",
-    "stylelint-config-sass-guidelines": "8.0.0",
-    "stylelint-declaration-use-variable": "https://github.com/ThomasHenrissat/stylelint-declaration-use-variable"
-  }
+    "name": "archriss-front-boilerplate",
+    "description": "A frontend development boilerplate",
+    "author": "Gwenael Robert, Thomas Henrissat",
+    "license": "MIT",
+    "scripts": {
+        "fresh-install": "rm -rf node_modules && yarn",
+        "fusv": "fusv ./src/scss",
+        "assets": "yarn afb-assets",
+        "scripts": "yarn afb-scripts",
+        "styles": "yarn afb-styles",
+        "docs": "yarn afb-docs",
+        "build": "yarn afb-build",
+        "watch": "yarn afb-watch"
+    },
+    "dependencies": {
+        "archriss-front-builder": "https://github.com/archriss/archriss-front-builder.git#v2.0.3",
+        "find-unused-sass-variables": "3.1.0",
+        "typescript": "4.3.5"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "4.28.2",
+        "@typescript-eslint/parser": "4.28.2",
+        "eslint": "7.30.0",
+        "eslint-plugin-react": "7.24.0",
+        "stylelint": "13.13.1",
+        "stylelint-config-recess-order": "2.4.0",
+        "stylelint-config-sass-guidelines": "8.0.0",
+        "stylelint-declaration-use-variable": "https://github.com/ThomasHenrissat/stylelint-declaration-use-variable"
+    }
 }

@@ -33,67 +33,82 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  border: 0; }
+  border: 0;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 table {
   border-spacing: 0;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .c-button__label {
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 .c-three-columns__title {
   margin-bottom: 10px;
-  font-weight: 700; }
-
+  font-weight: 700;
+}
 .c-three-columns__content {
   display: flex;
-  justify-content: space-around; }
-
+  justify-content: space-around;
+}
 @media screen and (min-width: 480px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 @media screen and (min-width: 760px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 @media screen and (min-width: 1000px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 @media screen and (min-width: 1300px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 @media screen and (min-width: 1700px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 @media screen and (min-width: 1800px) {
   .dummy {
-    box-sizing: border-box; } }
-
+    box-sizing: border-box;
+  }
+}
 /*# sourceMappingURL=main.css.map */
