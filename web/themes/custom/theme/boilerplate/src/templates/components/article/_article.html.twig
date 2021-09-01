@@ -3,22 +3,20 @@
 {% set componentClass = 'c-article' %}
 
 {% block content %}
-    <div {{ attributes.addClass(componentClass) }}>
+    <div class="{{ componentClass }} {{ attributes.class }}" {{ attributes }}>
         {{ title_prefix }}
         {{ title_suffix }}
-        {% if icon %}
-            {{ icon }}
-        {% endif %}
         {% if title %}
-            <h3>{{ title }}</h3>
+            <h3 class="{{ componentClass }}__title">{{ title }}</h3>
         {% endif %}
         {% if rte %}
-            {{ rte }}
+            <div class="{{ componentClass }}__rte">{{ rte }}</div>
         {% endif %}
-        {% include "@templates/components/button/_button.html.twig" with {
-            icon: "icon",
-            label: "En savoir plus",
-            url: url
-        } %}
+        {% if url %}
+            {% include "@templates/components/button/_button.html.twig" with {
+                label: "En savoir plus",
+                url: url
+            } %}
+        {% endif %}
     </div>
 {% endblock %}

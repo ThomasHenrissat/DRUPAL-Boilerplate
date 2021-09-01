@@ -1,0 +1,10 @@
+.c-article {
+    &__title {
+        margin-bottom: $margin-10;
+        font-weight: $font-weight-bold;
+    }
+
+    &__rte {
+        margin-bottom: $margin-10;
+    }
+}
