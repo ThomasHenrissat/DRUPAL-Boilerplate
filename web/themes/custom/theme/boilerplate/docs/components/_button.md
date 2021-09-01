@@ -8,7 +8,6 @@ Todo
 
 | Name | Type | Values | Default | Description |
 |------|------|--------|---------|-------------|
-| icon | text | :x: | :x: |  |
 | label | text | :x: | :x: |  |
 | url | text | :x: | :x: |  |
 
@@ -17,7 +16,6 @@ Todo
 
 ```twig
 {% include "@templates/components/button/_button.html.twig" with {
-    icon: "",
     label: "",
     url: ""
 } %}

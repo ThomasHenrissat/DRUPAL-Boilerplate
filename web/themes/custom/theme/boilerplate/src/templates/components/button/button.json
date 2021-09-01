@@ -1,7 +1,6 @@
 {
     "description": "Todo",
     "props": [
-        { "name": "icon", "type": "text" },
         { "name": "label", "type": "text" },
         { "name": "url", "type": "text" }
     ]

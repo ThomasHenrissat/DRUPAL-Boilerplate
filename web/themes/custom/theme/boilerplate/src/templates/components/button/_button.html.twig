@@ -3,7 +3,9 @@
 {% set componentClass = 'c-button' %}
 
 {% block content %}
-    <a class="{{ componentClass }}" href="{{ url }}">
-        <span class="{{ componentClass }}__label">{{ label }}</span><class="{{ componentClass }}__icon"span>{{ icon }}</span>
+    <a class="{{ componentClass }} {{ attributes.class }}" href="{{ url }}" {{ attributes }}>
+        {% if label %}
+            <span class="{{ componentClass }}__label">{{ label }}</span>
+        {% endif %}
     </a>
 {% endblock %}
