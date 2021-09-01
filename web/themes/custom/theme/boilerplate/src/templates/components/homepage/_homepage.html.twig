@@ -3,7 +3,7 @@
 {% set componentClass = 'c-homepage' %}
 
 {% block content %}
-    <div {{ attributes.addClass(componentClass) }}>
+    <div class="{{ componentClass }} {{ attributes.class }}" {{ attributes }}>
         {% if paragraph %}
             {{ paragraph }}
         {% endif %}
