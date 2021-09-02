@@ -1,13 +1,18 @@
 {
-    "description": "Todo",
+    "description": "Column layout",
     "props": [
         {
             "name": "columnCount",
             "type": "integer",
-            "value": ["1", "2", "3"],
-            "default": "2"
+            "values": ["1", "2", "3"],
+            "default": "2",
+            "description": "Number of columns to display"
         },
         { "name": "title", "type": "text" },
-        { "name": "content", "type": "content" }
+        {
+            "name": "content",
+            "type": "any",
+            "description": "Content to display in the columns"
+        }
     ]
 }
