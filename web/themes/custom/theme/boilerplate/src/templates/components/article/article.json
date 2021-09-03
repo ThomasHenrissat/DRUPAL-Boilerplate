@@ -1,9 +1,9 @@
 {
     "description": "Todo",
     "props": [
-        { "name": "icon", "type": "text" },
-        { "name": "url", "type": "text" },
+        { "name": "media", "type": "media" },
         { "name": "rte", "type": "rte" },
-        { "name": "title", "type": "text" }
+        { "name": "title", "type": "text" },
+        { "name": "url", "type": "text" }
     ]
 }
