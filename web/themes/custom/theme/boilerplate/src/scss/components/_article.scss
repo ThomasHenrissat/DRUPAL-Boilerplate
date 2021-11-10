@@ -1,6 +1,18 @@
 .c-article {
-    &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: $padding-20;
+    border: 1px solid $color-black;
+
+    &__title,
+    &__media,
+    &__rte {
         margin-bottom: $margin-10;
+    }
+
+    &__title {
         font-weight: $font-weight-bold;
     }
 
@@ -10,9 +22,5 @@
         img {
             width: 100%;
         }
-    }
-
-    &__rte {
-        margin-bottom: $margin-10;
     }
 }
