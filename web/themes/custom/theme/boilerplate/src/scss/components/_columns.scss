@@ -28,5 +28,6 @@
     &__content {
         display: grid;
         gap: $gap-20;
+        justify-items: center;
     }
 }
