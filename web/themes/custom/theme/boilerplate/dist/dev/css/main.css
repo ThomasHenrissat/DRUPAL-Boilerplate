@@ -69,8 +69,23 @@ table {
   box-sizing: border-box;
 }
 
-.c-article__title {
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.c-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.c-article__title, .c-article__media, .c-article__rte {
   margin-bottom: 10px;
+}
+.c-article__title {
   font-weight: 700;
 }
 .c-article__media {
@@ -78,9 +93,6 @@ table {
 }
 .c-article__media img {
   width: 100%;
-}
-.c-article__rte {
-  margin-bottom: 10px;
 }
 
 .c-button__label {
@@ -106,6 +118,7 @@ table {
 .c-columns__content {
   display: grid;
   gap: 20px;
+  justify-items: center;
 }
 @media screen and (min-width: 480px) {
   .dummy {
